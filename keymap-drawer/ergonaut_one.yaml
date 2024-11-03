@@ -1,6 +1,6 @@
 layers:
   default:
-  - {t: ']', h: Gui}
+  - {t: ↹, h: raise}
   - Q
   - W
   - E
@@ -12,7 +12,7 @@ layers:
   - O
   - P
   - BACKSPACE
-  - {t: '`', h: Ctrl}
+  - {t: ESCAPE, h: LEFT SHIFT}
   - A
   - S
   - D
@@ -23,11 +23,11 @@ layers:
   - K
   - L
   - ;
-  - {t: '''', h: Ctrl}
-  - {t: '-', h: Alt}
+  - ''''
+  - {t: DELETE, h: LEFT SHIFT}
   - Z
   - X
-  - F13
+  - '&TD_Shft_F19'
   - C
   - V
   - B
@@ -36,12 +36,12 @@ layers:
   - ','
   - .
   - /
-  - {t: ↹, h: raise}
-  - {t: ␣, h: Shift}
-  - {t: ⏎, h: lower}
-  - {t: Esc, h: lower}
-  - {t: ⌫, h: Shift}
-  - {t: ⌦, h: raise}
+  - Ctrl
+  - LEFT ALT
+  - '&TD_L1_L2'
+  - {t: ENTER, h: lower}
+  - ␣
+  - '&TD_L2_L1'
   lower:
   - {t: F1, h: Gui}
   - F2
@@ -81,12 +81,12 @@ layers:
   - Alt
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   raise:
-  - {t: KP NUM, h: Gui}
+  - {t: KP NUM, h: Gui, type: held}
   - KP SLASH
   - KP 7
   - KP 8
@@ -122,14 +122,14 @@ layers:
   - Page Down
   - Pause Break
   - Alt
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   adjust:
-  - Boot
+  - {t: Boot, type: held}
   - ''
   - ''
   - ''
@@ -165,10 +165,10 @@ layers:
   - ''
   - ''
   - Reset
-  - {type: held}
+  - {t: ▽, type: trans}
   - ''
+  - {t: ▽, type: trans}
   - {type: held}
-  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
