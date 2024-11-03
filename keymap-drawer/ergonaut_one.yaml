@@ -38,10 +38,10 @@ layers:
   - /
   - Ctrl
   - LEFT ALT
-  - '&TD_L1_L2'
+  - '&TD_L1_L2_L3'
   - {t: ENTER, h: lower}
   - ␣
-  - '&TD_L2_L1'
+  - '&TD_L2_L1_L3'
   lower:
   - {t: F1, h: Gui}
   - F2
