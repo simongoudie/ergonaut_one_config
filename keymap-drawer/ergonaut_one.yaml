@@ -11,7 +11,7 @@ layers:
   - I
   - O
   - P
-  - '['
+  - BACKSPACE
   - {t: '`', h: Ctrl}
   - A
   - S
@@ -27,6 +27,7 @@ layers:
   - {t: '-', h: Alt}
   - Z
   - X
+  - F13
   - C
   - V
   - B
@@ -34,7 +35,6 @@ layers:
   - M
   - ','
   - .
-  - /
   - /
   - {t: ↹, h: raise}
   - {t: ␣, h: Shift}
