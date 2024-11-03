@@ -24,10 +24,250 @@
     combos {
         compatible = "zmk,combos";
 
-        Test {
-            bindings = <&kp Z>;
-            key-positions = <24 25>;
+        TB_Backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <5 30>;
+            layers = <0>;
         };
+
+        YV_Forwardslash {
+            bindings = <&kp SLASH>;
+            key-positions = <29 6>;
+            layers = <0>;
+        };
+
+        TV_Lparens {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <4 5>;
+            layers = <0>;
+        };
+
+        YB_RParens {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <6 7>;
+            layers = <0>;
+        };
+
+        RT_LBrace {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <28 29>;
+            layers = <0>;
+        };
+
+        YU_RBrace {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <30 31>;
+            layers = <0>;
+        };
+
+        FG_LBrack {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <16 17>;
+            layers = <0>;
+        };
+
+        HJ_RBrack {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <18 19>;
+            layers = <0>;
+        };
+
+        JK_BCKSP {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <19 20>;
+            layers = <0>;
+        };
+
+        KL_DEL {
+            bindings = <&kp DELETE>;
+            key-positions = <20 21>;
+            layers = <0>;
+        };
+
+        P_BCKSP_DEL {
+            bindings = <&kp DELETE>;
+            key-positions = <10 11>;
+            layers = <0>;
+        };
+
+        GH_Dash {
+            bindings = <&kp MINUS>;
+            key-positions = <17 18>;
+            layers = <0>;
+        };
+
+        VB_Under {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <29 30>;
+            layers = <0>;
+        };
+
+        TY_Equals {
+            bindings = <&kp EQUAL>;
+            key-positions = <5 6>;
+            layers = <0>;
+        };
+
+        TV_Lpoint {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <5 29>;
+            layers = <0>;
+        };
+
+        YB_Rpoint {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <6 30>;
+            layers = <0>;
+        };
+
+        Num1 {
+            bindings = <&kp NUMBER_1>;
+            key-positions = <1 13>;
+            layers = <0>;
+        };
+
+        Num2 {
+            bindings = <&kp NUMBER_2>;
+            key-positions = <2 14>;
+            layers = <0>;
+        };
+
+        Num3 {
+            bindings = <&kp NUMBER_3>;
+            key-positions = <3 15>;
+            layers = <0>;
+        };
+
+        Num4 {
+            bindings = <&kp NUMBER_4>;
+            key-positions = <4 16>;
+            layers = <0>;
+        };
+
+        Num5 {
+            bindings = <&kp N5>;
+            key-positions = <5 17>;
+            layers = <0>;
+        };
+
+        Num6 {
+            bindings = <&kp NUMBER_6>;
+            key-positions = <6 18>;
+            layers = <0>;
+        };
+
+        Num7 {
+            bindings = <&kp N7>;
+            key-positions = <7 19>;
+            layers = <0>;
+        };
+
+        Num8 {
+            bindings = <&kp N8>;
+            key-positions = <8 20>;
+            layers = <0>;
+        };
+
+        Num9 {
+            bindings = <&kp N9>;
+            key-positions = <9 21>;
+            layers = <0>;
+        };
+
+        Num0 {
+            bindings = <&kp N0>;
+            key-positions = <10 22>;
+            layers = <0>;
+        };
+
+        Sym_Exc {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <13 25>;
+            layers = <0>;
+        };
+
+        Sym_At {
+            bindings = <&kp AT_SIGN>;
+            key-positions = <26 14>;
+            layers = <0>;
+        };
+
+        Sym_Hash {
+            bindings = <&kp HASH>;
+            key-positions = <15 27>;
+            layers = <0>;
+        };
+
+        Sym_Dollar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <16 28>;
+            layers = <0>;
+        };
+
+        Sym_Perc {
+            bindings = <&kp PERCENT>;
+            key-positions = <17 29>;
+            layers = <0>;
+        };
+
+        Sym_Carot {
+            bindings = <&kp CARET>;
+            key-positions = <18 30>;
+            layers = <0>;
+        };
+
+        Sym_Amp {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <19 31>;
+            layers = <0>;
+        };
+
+        Sym_Ast {
+            bindings = <&kp ASTERISK>;
+            key-positions = <20 32>;
+            layers = <0>;
+        };
+
+        Sym_LParens {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <21 33>;
+            layers = <0>;
+        };
+
+        Sym_RParens {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <22 34>;
+            layers = <0>;
+        };
+
+        Sym_Dash {
+            bindings = <&kp MINUS>;
+            key-positions = <23 35>;
+            layers = <0>;
+        };
+
+        Next_win {
+            bindings = <&kp LA(TAB)>;
+            key-positions = <3 4>;
+            layers = <0>;
+        };
+
+        Next_tab {
+            bindings = <&kp LC(TAB)>;
+            key-positions = <3 2>;
+            layers = <0>;
+        };
+
+    };
+
+    behaviors {
+        TD_Shft_F19: TD_Shft_F19 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_SHFT_F19";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT>, <&kp F19>;
+        };
+
     };
 
     keymap {
