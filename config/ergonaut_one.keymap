@@ -268,6 +268,38 @@
             bindings = <&kp LEFT_SHIFT>, <&kp F19>;
         };
 
+        TD_L1_L2: TD_L1_L2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_L1_L2";
+            #binding-cells = <0>;
+            bindings = <&mo 1>, <&mo 2>;
+        };
+
+        TD_L2_L1: TD_L2_L1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_L2_L1";
+            #binding-cells = <0>;
+            bindings = <&mo 2>, <&mo 1>;
+        };
+
+        TD_tab_shift: TD_tab_shift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TD_TAB_SHIFT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+        TD_layer_tap: TD_layer_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TD_LAYER_TAP";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
     };
 
     keymap {
