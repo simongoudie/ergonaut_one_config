@@ -280,38 +280,6 @@
             #binding-cells = <0>;
             bindings = <&mo 2>, <&mo 1>;
         };
-
-        TD_tap_hold: TD_tap_hold {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TD_TAP_HOLD";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-
-        TD_layer_tap: TD_layer_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TD_LAYER_TAP";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-
-        TD_L1_L2_L3: TD_L1_L2_L3 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_L1_L2_L3";
-            #binding-cells = <0>;
-            bindings = <&mo 1>, <&mo 2>, <&mo 3>;
-        };
-
-        TD_L2_L1_L3: TD_L2_L1_L3 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_L2_L1_L3";
-            #binding-cells = <0>;
-            bindings = <&mo 2>, <&mo 1>, <&mo 3>;
-        };
     };
 
     keymap {
@@ -319,10 +287,10 @@
 
         default_layer {
             bindings = <
-&TD_layer_tap 2 TAB             &kp Q  &kp W  &kp E         &kp R         &kp T         &kp Y          &kp U      &kp I         &kp O      &kp P       &kp BACKSPACE
-&TD_tap_hold LEFT_SHIFT ESCAPE  &kp A  &kp S  &kp D         &kp F         &kp G         &kp H          &kp J      &kp K         &kp L      &kp SEMI    &kp SQT
-&TD_tap_hold LEFT_SHIFT DELETE  &kp Z  &kp X  &TD_Shft_F19  &kp C         &kp V         &kp B          &kp N      &kp M         &kp COMMA  &kp PERIOD  &kp SLASH
-                                              &kp LCTRL     &kp LEFT_ALT  &TD_L1_L2_L3  &lt LWR ENTER  &kp SPACE  &TD_L2_L1_L3
+&lt 2 TAB              &kp Q  &kp W  &kp E         &kp R         &kp T      &kp Y          &kp U      &kp I      &kp O      &kp P       &kp BACKSPACE
+&mt LEFT_SHIFT ESCAPE  &kp A  &kp S  &kp D         &kp F         &kp G      &kp H          &kp J      &kp K      &kp L      &kp SEMI    &mt RSHFT SQT
+&mt LEFT_SHIFT DELETE  &kp Z  &kp X  &TD_Shft_F19  &kp C         &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp PERIOD  &mt RIGHT_SHIFT SLASH
+                                     &kp LCTRL     &kp LEFT_ALT  &TD_L1_L2  &lt LWR ENTER  &kp SPACE  &TD_L2_L1
             >;
         };
 
@@ -337,9 +305,9 @@
 
         raise_layer {
             bindings = <
-&mt LGUI KP_NUM  &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP  &kp SLCK         &kp CLCK
-&mt LCTRL EQUAL  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &kp C_MUTE    &kp LEFT  &kp UP     &kp RIGHT  &kp INS          &mt RCTRL K_APP
-&kp LALT         &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT    &kp C_VOL_DN  &kp END   &kp DOWN   &kp PG_DN  &kp PAUSE_BREAK  &kp RALT
+&mt LGUI KP_NUM  &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &kp C_VOL_UP  &kp HOME  &kp END   &kp PG_UP  &kp PRINTSCREEN  &trans
+&mt LCTRL EQUAL  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &kp LEFT      &kp DOWN  &kp UP    &kp RIGHT  &kp INS          &trans
+&kp LALT         &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT    &kp C_VOL_DN  &kp END   &kp DOWN  &kp PG_DN  &kp K_APP        &trans
                                              &trans     &trans     &trans        &trans        &trans    &trans
             >;
         };
