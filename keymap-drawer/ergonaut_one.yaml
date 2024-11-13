@@ -23,7 +23,7 @@ layers:
   - K
   - L
   - ;
-  - ''''
+  - {t: '''', h: Shift}
   - {t: DELETE, h: LEFT SHIFT}
   - Z
   - X
@@ -35,13 +35,13 @@ layers:
   - M
   - ','
   - .
-  - /
+  - {t: /, h: RIGHT SHIFT}
   - Ctrl
   - LEFT ALT
-  - '&TD_L1_L2_L3'
+  - '&TD_L1_L2'
   - {t: ENTER, h: lower}
   - ␣
-  - '&TD_L2_L1_L3'
+  - '&TD_L2_L1'
   lower:
   - Gui
   - '!'
@@ -94,22 +94,22 @@ layers:
   - KP MINUS
   - Vol Up
   - Home
-  - Print Scrn
+  - End
   - Page Up
-  - SLCK
-  - CLCK
+  - PRINTSCREEN
+  - {t: ▽, type: trans}
   - {t: '=', h: Ctrl}
   - KP MULTIPLY
   - KP 4
   - KP 5
   - KP 6
   - KP PLUS
-  - MUTE
   - ←
+  - ↓
   - ↑
   - →
   - Insert
-  - {t: APP, h: Ctrl}
+  - {t: ▽, type: trans}
   - Alt
   - KP 0
   - KP 1
@@ -120,8 +120,8 @@ layers:
   - End
   - ↓
   - Page Down
-  - Pause Break
-  - Alt
+  - APP
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -158,8 +158,8 @@ layers:
   - ''
   - ''
   - ''
-  - '!'
-  - '@'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ''
   - ''
   - ''
@@ -288,4 +288,10 @@ combos:
   l: [default]
 - p: [3, 2]
   k: Tab Right
+  l: [default]
+- p: [36, 37, 38, 0]
+  k: Boot
+  l: [default]
+- p: [40, 39, 41, 11]
+  k: Boot
   l: [default]

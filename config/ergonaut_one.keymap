@@ -257,6 +257,18 @@
             key-positions = <3 2>;
             layers = <0>;
         };
+
+        boot_left {
+            bindings = <&bootloader>;
+            key-positions = <36 37 38 0>;
+            layers = <0>;
+        };
+
+        boot_right {
+            bindings = <&bootloader>;
+            key-positions = <40 39 41 11>;
+            layers = <0>;
+        };
     };
 
     behaviors {
@@ -265,6 +277,8 @@
             label = "TD_SHFT_F19";
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp F19>;
+
+            tapping-term-ms = <300>;
         };
 
         TD_L1_L2: TD_L1_L2 {
@@ -314,10 +328,10 @@
 
         adjust_layer {
             bindings = <
-&bootloader  &none         &none         &none         &none         &none            &none         &none         &none         &none         &none         &bootloader
-&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4     &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
-&sys_reset   &none         &none         &none         &none         &kp EXCLAMATION  &kp AT_SIGN   &none         &none         &none         &none         &sys_reset
-                                         &trans        &none         &trans           &none         &trans        &trans
+&bootloader  &none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &bootloader
+&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
+&sys_reset   &none         &none         &none         &none         &trans        &trans        &none         &none         &none         &none         &sys_reset
+                                         &trans        &none         &trans        &none         &trans        &trans
             >;
         };
     };
