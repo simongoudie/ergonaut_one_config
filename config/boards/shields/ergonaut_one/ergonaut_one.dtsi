@@ -10,7 +10,8 @@
 / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,matrix_transform = &default_transform;
+/*        zmk,matrix_transform = &default_transform; */
+        zmk,physical-layout = &default_layout;
         /* /delete-property/ zephyr,console; */
         /* /delete-property/ zephyr,shell-uart; */
     };
